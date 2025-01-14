@@ -10429,8 +10429,8 @@
             g.createXMLSprite(this.screen, a, d.italicFont, "Center", 125, 87, d.translations.node.resolve("cinema"));
             g.alignLeft(a);
             a = new h;
-            g.createImageSprite(this.screen, a, "screens/legal_line", !0, this.screenWidth / 2, this.screenHeight - 30);
-            a = new h;
+           // g.createImageSprite(this.screen, a, "screens/legal_line", !0, this.screenWidth / 2, this.screenHeight - 30);
+           // a = new h;
             g.createImageSprite(this.screen, a, "blank", !0, this.screenWidth / 2, this.screenHeight / 2 + 45);
             a.$zF[1].set_pixelSnapping(!1);
             var b = new h;
@@ -12516,7 +12516,7 @@
                 c = new h;
             g.createXMLSprite(this.screen, c, b, "Center", this.screenWidth / 2, 105, d.translations.node.resolve("cinema"));
             b = new h;
-            g.createImageSprite(this.screen, b, "legal_line", !0, this.screenWidth / 2, this.screenHeight - 30, "LOADER");
+            //g.createImageSprite(this.screen, b, "legal_line", !0, this.screenWidth / 2, this.screenHeight - 30, "LOADER");
             var e = new h;
             e.add(new N(d.loaderPack.getTexture("loader_icon")));
             this.screen.addChild(e);
