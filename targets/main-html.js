@@ -1,4 +1,5 @@
 "use strict";
+
 (function (Ie) {
   function v(a, b) {
     function c() {}
@@ -591,6 +592,12 @@
   U.init = function () {
     m.$vG
       .getCloudStorage()
+      .get(U.gameName + "playCount", 0)
+      .then(function (count) {
+        d.playCount = count;
+      });
+    m.$vG
+      .getCloudStorage()
       .get(U.gameName + "score1", 0)
       .then(function (a) {
         d.score1 = a;
@@ -638,19 +645,31 @@
         d.trophy2 = a;
       });
   };
+  
   U.save = function () {
     U.saveInt("score1", d.score1);
     U.saveInt("time1", d.time1);
     U.saveInt("targets1", d.targets1);
     U.saveInt("trophy1", d.trophy1);
+
+    // Save score1 into localStorage as an integer with var name teamScore
+    localStorage.setItem("teamScore", d.score1);
+    
+    // mission 2
     U.saveInt("score2", d.score2);
     U.saveInt("time2", d.time2);
     U.saveInt("targets2", d.targets2);
     U.saveInt("trophy2", d.trophy2);
+
+    //play count
+    U.saveInt("playCount", d.playCount);
   };
+  
   U.saveInt = function (a, b) {
     m.$vG.getCloudStorage().set(U.gameName + a, b);
   };
+
+ 
   var xd = function () {};
   l["haxe.IMap"] = xd;
   xd.__name__ = ["haxe", "IMap"];
@@ -12525,6 +12544,15 @@
           this.menuLoop.volume.animateTo(this.musicVolume, 0.5));
     },
     startGame: function () {
+
+      //new logic for game loop 
+      if (d.playCount >= 999) {
+        alert("You have reached the maximum number of plays.");
+        return;
+      }
+
+      d.playCount++;
+      U.saveInt("playCount", d.playCount);
       d.mission = 1;
       this.screen = new h().add(new Y(16777215, d.staticWidth, d.staticHeight));
       m.root.addChild(this.screen);
@@ -14794,6 +14822,7 @@
       this.pickups.push(a);
       a.$zF[30].move(d, e);
     },
+
     onUpdate: function (a) {
       this.inPlay &&
         ((this.timer -= a),
@@ -14827,6 +14856,7 @@
             : this.spidey.$zF[1].x.$bG < this.leftLimit &&
               this.spidey.$zF[1].x.set__(this.leftLimit)));
     },
+
     timeOut: function () {
       var a = this;
       this.controlsActive = !1;
@@ -19998,3 +20028,4 @@
     ? self
     : this
 );
+
