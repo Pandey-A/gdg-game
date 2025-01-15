@@ -13896,7 +13896,7 @@
       r.instance(this.healthbar.$zF[1], N).texture = d.pack.getTexture(
         "hud/health" + a
       );
-      g.alignLeft(this.healthbar);
+      // g.alignLeft(this.healthbar);
     },
     __class__: od,
   });
@@ -14053,7 +14053,7 @@
       r.instance(this.healthbar.$zF[1], N).texture = d.pack.getTexture(
         "hud/health" + a
       );
-      g.alignLeft(this.healthbar);
+      // g.alignLeft(this.healthbar);
     },
     __class__: pd,
   });
