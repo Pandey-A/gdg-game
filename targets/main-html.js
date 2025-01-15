@@ -12371,15 +12371,6 @@
         this.screenWidth / 2 - 230,
         this.screenHeight / 2 + 80
       );
-      this.frame2 = new h();
-      g.createImageSprite(
-        this.screen,
-        this.frame2,
-        "screens/mission2_frame",
-        !0,
-        this.screenWidth / 2 + 230,
-        this.screenHeight / 2 + 80
-      );
       this.startBtn = new h();
       g.createImageSprite(
         this.screen,
@@ -12389,15 +12380,6 @@
         this.screenWidth / 2 - 230 + 190,
         this.screenHeight / 2 + 225
       );
-      this.startBtn2 = new h();
-      g.createImageSprite(
-        this.screen,
-        this.startBtn2,
-        "buttons/BTN_play",
-        !0,
-        this.screenWidth / 2 + 418,
-        this.screenHeight / 2 + 225
-      );
       a = new h();
       g.createImageSprite(
         this.screen,
@@ -12420,36 +12402,9 @@
       g.createImageSprite(
         this.screen,
         a,
-        "screens/star_icon",
-        !0,
-        this.screenWidth / 2 + 310,
-        this.screenHeight / 2 + 10
-      );
-      a = new h();
-      g.createImageSprite(
-        this.screen,
-        a,
-        "screens/time_icon",
-        !0,
-        this.screenWidth / 2 + 310,
-        this.screenHeight / 2 + 60
-      );
-      a = new h();
-      g.createImageSprite(
-        this.screen,
-        a,
         "screens/land_icon",
         !0,
         this.screenWidth / 2 - 210 + 50,
-        this.screenHeight / 2 + 115
-      );
-      a = new h();
-      g.createImageSprite(
-        this.screen,
-        a,
-        "screens/land_icon",
-        !0,
-        this.screenWidth / 2 + 310,
         this.screenHeight / 2 + 115
       );
       a = new h();
@@ -12459,16 +12414,6 @@
         d.blackItalicFont,
         "Center",
         this.screenWidth / 2 - 210 - 30,
-        this.screenHeight / 2 - 7,
-        d.translations.node.resolve("best")
-      );
-      a = new h();
-      g.createXMLSprite(
-        this.screen,
-        a,
-        d.blackItalicFont,
-        "Center",
-        this.screenWidth / 2 + 260 - 30,
         this.screenHeight / 2 - 7,
         d.translations.node.resolve("best")
       );
@@ -12488,16 +12433,6 @@
         a,
         d.blackFont,
         "Left",
-        this.screenWidth / 2 + 340,
-        this.screenHeight / 2 - 18,
-        r.string(d.score2)
-      );
-      a = new h();
-      g.createTextSprite(
-        this.screen,
-        a,
-        d.blackFont,
-        "Left",
         this.screenWidth / 2 - 210 + 80,
         this.screenHeight / 2 + 33,
         r.string(d.time1)
@@ -12508,29 +12443,9 @@
         a,
         d.blackFont,
         "Left",
-        this.screenWidth / 2 + 340,
-        this.screenHeight / 2 + 33,
-        r.string(d.time2)
-      );
-      a = new h();
-      g.createTextSprite(
-        this.screen,
-        a,
-        d.blackFont,
-        "Left",
         this.screenWidth / 2 - 210 + 80,
         this.screenHeight / 2 + 84,
         r.string(d.targets1)
-      );
-      a = new h();
-      g.createTextSprite(
-        this.screen,
-        a,
-        d.blackFont,
-        "Left",
-        this.screenWidth / 2 + 340,
-        this.screenHeight / 2 + 84,
-        r.string(d.targets2)
       );
       a = new h();
       g.createImageSprite(
