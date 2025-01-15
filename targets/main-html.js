@@ -12101,8 +12101,6 @@
       );
       g.alignLeft(a);
       a = new h();
-      // g.createImageSprite(this.screen, a, "screens/legal_line", !0, this.screenWidth / 2, this.screenHeight - 30);
-      // a = new h;
       g.createImageSprite(
         this.screen,
         a,
@@ -17178,7 +17176,6 @@
         d.translations.node.resolve("cinema")
       );
       b = new h();
-      //g.createImageSprite(this.screen, b, "legal_line", !0, this.screenWidth / 2, this.screenHeight - 30, "LOADER");
       var e = new h();
       e.add(new N(d.loaderPack.getTexture("loader_icon")));
       this.screen.addChild(e);
@@ -18351,16 +18348,6 @@
                 bytes: 20568,
                 md5: "9Iz5SpfoBECSybKy5g4DPw",
                 name: "italicFont.webp",
-              },
-              {
-                bytes: 4911,
-                md5: "-O_zS99mK_C3bPa3o1n5QQ",
-                name: "legal_line.png",
-              },
-              {
-                bytes: 4146,
-                md5: "k1Q28CssVF_UAwWeNdMlYA",
-                name: "legal_line.webp",
               },
               {
                 bytes: 4846,
@@ -19653,16 +19640,6 @@
                 bytes: 696,
                 md5: "WkoEhXgRB-1K6JjgkqceFg",
                 name: "screens/land_icon.webp",
-              },
-              {
-                bytes: 4911,
-                md5: "-O_zS99mK_C3bPa3o1n5QQ",
-                name: "screens/legal_line.png",
-              },
-              {
-                bytes: 4146,
-                md5: "k1Q28CssVF_UAwWeNdMlYA",
-                name: "screens/legal_line.webp",
               },
               {
                 bytes: 590941,

@@ -1,4 +1,3 @@
-/** Built with 2DKit, http://2dkit.com */
 var kit = {
   embed: function (u, z) {
     var q = document.getElementById(z);
